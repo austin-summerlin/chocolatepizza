@@ -1,6 +1,28 @@
-#posted {
+.main-section {
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    width: 1000px;
+    max-width: 80%;
+}
+
+.bottom-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1000px;
+    max-width: 80%;
+}
+
+#womanName, #womanInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#womanName {
+    width: 800px;
+    height: 200px;
 }
 
 body {
@@ -21,20 +43,6 @@ main {
     margin-bottom: calc(var(--footer-height));
 }
 
-section {
-    background-color: var(--color5);
-    width: 1000px;
-    max-width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: var(--gutter);
-    padding-bottom: var(--gutter);
-    margin-top: var(--gutter);
-    margin-bottom: var(--gutter);
-    border: solid 2px var(--color1);
-}
 
 
 header {
@@ -83,13 +91,10 @@ footer {
     padding-bottom: 25px;
 }
 
-#posted h5 {
-    display: flex;
-    justify-content: left;
-}
 
 #button {
     display: flex;
+    flex-direction: row;
     justify-content: flex-end;
 }
 
@@ -102,3 +107,19 @@ button {
     color: white;
 }
 
+#bottomSpan {
+    display: flex;
+    flex-direction:row-reverse;
+    justify-content: center;
+}
+
+.choco-pizza {
+    font-size: 2.5rem;
+    font-weight:bolder;
+}
+
+.photo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
